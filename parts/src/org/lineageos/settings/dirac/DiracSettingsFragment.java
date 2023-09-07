@@ -137,7 +137,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-        DiracUtils.setEnabled(isChecked);
+        mDiracUtils.setEnabled(isChecked);
 
         mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
         mSwitchBar.setActivated(isChecked);
